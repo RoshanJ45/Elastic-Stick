@@ -1,0 +1,46 @@
+    body {
+height:100dvh;
+margin:0;
+display:grid;
+place-items:center;
+background-image:linear-gradient(in oklch longer hue,hotpink,white);
+overflow:hidden;
+}
+div{
+width:1em;
+aspect-ratio:1;
+background:limegreen;
+border-radius:50%;
+translate:0 .1em;
+scale:1.015;
+animation:wiebel 4s infinite alternate ease-in-out;
+}
+body > div {
+filter:
+drop-shadow(.1em .1em 0 hsl(45 100% 50%))
+drop-shadow(.1em .1em 0 hsl(44 100% 49.5%))
+drop-shadow(.1em .1em 0 hsl(43 100% 49%))
+drop-shadow(.1em .1em 0 hsl(42 100% 48.5%))
+drop-shadow(.1em .1em 0 hsl(41 100% 48%))
+drop-shadow(.1em .1em 0 hsl(40 100% 47.5%))
+drop-shadow(.1em .1em 0 hsl(39 100% 47%))
+drop-shadow(.1em .1em 0 hsl(38 100% 46.5%))
+drop-shadow(.1em .1em 0 hsl(37 100% 46%))
+drop-shadow(.1em .1em 0 hsl(36 100% 45.5%));
+}
+@keyframes wiebel {
+0% {
+rotate:4.9deg;
+scale:1.012;
+translate:0 .115em;
+}
+50% {
+scale:1.015;
+translate:0 .075em;
+}
+100% {
+rotate:-4.9deg;
+scale:1.012;
+translate:0 .115em;
+}
+}
